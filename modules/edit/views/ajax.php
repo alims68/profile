@@ -1,0 +1,1 @@
+<?php validation_errors(); ?>
