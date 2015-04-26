@@ -39,7 +39,7 @@
 */
 
 
-$route['default_controller'] = "home";
+$route['default_controller'] = "profile";
 $route['404_override'] = '';
 
 // Authentication
@@ -51,6 +51,7 @@ Route::block('users/register');
 Route::any('logout', 'users/logout');
 Route::any('forgot_password', 'users/forgot_password');
 Route::any('reset_password/(:any)/(:any)', 'users/reset_password/$1/$2');
+Route::any('p/(:any)', 'profile/index/$1');
 
 // Activation
 Route::any('activate', 'users/activate');
@@ -67,6 +68,8 @@ Route::prefix(SITE_AREA, function(){
 
 
 $route[SITE_AREA]	= 'admin/home';
+
+
 
 
 $route = Route::map($route);

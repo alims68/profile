@@ -131,6 +131,13 @@ class Profile extends Front_Controller
   public function follow($user_id)
   {
     $this->load->model('follow_model');
+    $data = array(
+      'user_id'     => $user_id, 
+      'follower_id' => $this->current_user->id, 
+    );
+    $this->follow_model->insert($data);
+
+    $data_json = array('status' => 1);
     echo json_encode($data);
   }
 

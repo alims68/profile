@@ -22,7 +22,7 @@ $config['base_url']	= '';
  * else. If you are using mod_rewrite to remove the page set this variable so that
  * it is blank.
  */
-$config['index_page'] = "index.php";
+$config['index_page'] = "";
 
 /*
  *------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ $config['url_suffix'] = '';
  * This determines which set of language files should be used. Make sure there is
  * an available translation if you intend to use something other than english.
 */
-$config['language']	= 'english';
+$config['language']	= 'persian';
 
 /*
  *------------------------------------------------------------------------------
@@ -210,7 +210,7 @@ $config['cache_path'] = APPPATH . 'cache/';
  * If you use the Encryption class or the Session class you MUST set an encryption
  * key. See the user guide for info.
  */
-$config['encryption_key'] = "95c7a08c49929f3f5619014c56e7f0aa";
+$config['encryption_key'] = "4581721afa73d6754526e10a831dd74a";
 
 /*
  *------------------------------------------------------------------------------
@@ -271,7 +271,7 @@ $config['global_xss_filtering'] = false;
  * 'csrf_cookie_name' = The cookie name
  * 'csrf_expire'      = The number in seconds the token should expire.
  */
-$config['csrf_protection']  = true;
+$config['csrf_protection']  = false;
 $config['csrf_token_name'] = 'ci_csrf_token';
 $config['csrf_cookie_name'] = 'ci_csrf_token';
 $config['csrf_expire'] = 7200;

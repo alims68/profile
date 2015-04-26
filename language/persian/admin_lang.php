@@ -1,185 +1,235 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php defined('BASEPATH') || exit('No direct script access allowed');
+/**
+ * Bonfire
+ *
+ * An open source project to allow developers to jumpstart their development of
+ * CodeIgniter applications
+ *
+ * @package   Bonfire
+ * @author    Bonfire Dev Team
+ * @copyright Copyright (c) 2011 - 2014, Bonfire Dev Team
+ * @license   http://opensource.org/licenses/MIT
+ * @link      http://cibonfire.com
+ * @since     Version 1.0
+ */
 
-$lang['register_error']= 'لطفاً در وارد کردن اطلاعات دقت کنید.';
-$lang['register_success']= 'مرحله اول ثبت نام انجام شد. یک کد چهار رقمی برای شما ارسال شد.';
-$lang['register_duplicate']= 'این شماره قبلاً ثبت نام شده است.';
-$lang['register_complate']= 'نام کاربری و کلمه عبور به موبایل شما ارسال شد.';
+/**
+ * Application language file (Persian)
+ *
+ * Localization strings used by Bonfire
+ *
+ * @package    Bonfire\Application\Language\Persian
+ * @author     Translator Sajjad Servatjoo <sajjad.servatjoo[at]gmail[dot]com>
+ * @link       http://cibonfire.com/docs/guides
+ */
 
-$lang['login_complate']= 'با موفقیت به حساب کاربری خود وارد شدید.';
-$lang['login_faild']= 'در ورود به حساب کاربری خطای رخ داده.';
+//--------------------------------------------------------------------
+// ! GENERAL SETTINGS
+//--------------------------------------------------------------------
 
-$lang['email_suffix']= '@gmail.com';
-$lang['active_number']= 'تایید شماره';
+$lang['bf_site_name']			= 'نام سایت';
+$lang['bf_site_email']			= 'تنظیمات ایمیل';
+$lang['bf_site_email_help']		= 'آدرس پست الکترونیکی پیشفرض که ایمیل های تولید شده توسط سیستم به وسیله آن ارسال میشود';
+$lang['bf_site_status']			= 'وضعیت سایت';
+$lang['bf_online']				= 'آنلاین';
+$lang['bf_offline']				= 'آفلایت';
+$lang['bf_top_number']			= 'مورد <em> در هر</em> صفحه:';
+$lang['bf_top_number_help']		= 'به هنگام نمایش گزارشات چند مورد در هر صفحه نمایش داده شود؟';
+$lang['bf_home']				= 'خانه';
+$lang['bf_site_information']	= 'اطلاعات سایت';
+$lang['bf_timezone']			= 'منطقه ی زمانی';
+$lang['bf_language']			= 'زبان';
+$lang['bf_language_help']		= 'زبان های قابل دسترس کاربران را انتخاب نمایید.';
 
-$lang['login_title']= 'ورود و ثبت نام';
-$lang['no_permission']= 'شما اجازه دسترسی به این صفحه را ندارید.';
-$lang['required_all']= 'تمام فیلدها اجباری است';
-$lang['try_again']= 'لطفا دوباره تلاش کنید.';
+//--------------------------------------------------------------------
+// ! AUTH SETTINGS
+//--------------------------------------------------------------------
 
-$lang['confirmed']= 'تایید شده';
-$lang['pending']= 'در انتظار بررسی';
-$lang['suspended']= 'معلق شده';
-$lang['blocked']= 'مسدود شده';
+$lang['bf_security']			= 'امنیت';
+$lang['bf_login_type']			= 'نوع ورود';
+$lang['bf_login_type_email']	= 'فقط ایمیل';
+$lang['bf_login_type_username']	= 'فقط نام کاربری';
+$lang['bf_allow_register']		= 'اجازه ثبت نام توسط کاربران؟';
+$lang['bf_login_type_both']		= 'ایمیل یا نام کاربری';
+$lang['bf_use_usernames']		= 'نمایش کاربران در بن فایر با:';
+$lang['bf_use_own_name']		= 'استفاده از نام شخصی';
+$lang['bf_allow_remember']		= 'اجازه استفاده از \'مرا به خاطر داشته باش\'؟';
+$lang['bf_remember_time']		= 'به خاطر داشتن کاربران به مدت:';
+$lang['bf_week']				= 'هفته';
+$lang['bf_weeks']				= 'هفته';
+$lang['bf_days']				= 'روز';
+$lang['bf_username']			= 'نام کاربری';
+$lang['bf_password']			= 'کلمه عبور';
+$lang['bf_password_confirm']	= 'کلمه عبور (تکرار)';
+$lang['bf_display_name']		= 'نام نمایشی';
 
-$lang['picture']= 'تصویر';
-$lang['mobile']= 'موبایل';
-$lang['name']= 'نام';
-$lang['family']= 'نام خانوادگی';
-$lang['namefamily']= 'نام - نام خانوادگی';
-$lang['fullname']= 'نام و نام خانوادگی';
-$lang['email']= 'ایمیل';
-$lang['username']= 'نام کاربری';
-$lang['password']= 'رمز عبور';
-$lang['description']= 'توضیحات';
-$lang['user']= 'کاربر';
+//--------------------------------------------------------------------
+// ! CRUD SETTINGS
+//--------------------------------------------------------------------
 
+$lang['bf_home_page']			= 'صفحه اصلی';
+$lang['bf_pages']				= 'صفحات';
+$lang['bf_enable_rte']			= 'فعال بودن ادیتور برای صفحات؟';
+$lang['bf_rte_type']			= 'نوع ادیتور';
+$lang['bf_searchable_default']	= 'به صورت پیشفرض قابل جستجو باشد؟';
+$lang['bf_cacheable_default']	= 'به صورت پیشفرض قابلیت کش را داشته باشد؟';
+$lang['bf_track_hits']			= 'پیگیری نمایش صفحه؟';
 
+$lang['bf_action_save']			= 'ذخیره';
+$lang['bf_action_delete']		= 'حذف';
+$lang['bf_action_cancel']		= 'انصراف';
+$lang['bf_action_download']		= 'دانلود';
+$lang['bf_action_preview']		= 'پیش نمایش';
+$lang['bf_action_search']		= 'جستجو';
+$lang['bf_action_purge']		= 'پالایش';
+$lang['bf_action_restore']		= 'بازگردانی';
+$lang['bf_action_show']			= 'نمایش';
+$lang['bf_action_login']		= 'ورود';
+$lang['bf_action_logout']		= 'خروج';
+$lang['bf_actions']				= 'عملیات';
+$lang['bf_clear']				= 'پاک کردن';
+$lang['bf_action_list']			= 'لیست';
+$lang['bf_action_create']		= 'ایجاد';
+$lang['bf_action_ban']			= 'تحریم کردن';
 
+//--------------------------------------------------------------------
+// ! SETTINGS LIB
+//--------------------------------------------------------------------
+$lang['bf_ext_profile_show']	= 'آیا حساب های کاربری شامل مشخصات پیشرفته هستند؟';
+$lang['bf_ext_profile_info']	= 'اگر میخواهید کاربران مشخصات بیشتری را در مورد خود در صفحه مشخصات وارد نمایند این گزینه را فعال نمایید';
 
+$lang['bf_yes']					= 'بله';
+$lang['bf_no']					= 'خیر';
+$lang['bf_none']				= 'هیچ';
+$lang['bf_id']					= 'ID';
 
+$lang['bf_or']					= 'یا';
+$lang['bf_size']				= 'اندازه';
+$lang['bf_files']				= 'فایل ها';
+$lang['bf_file']				= 'فایل';
 
+$lang['bf_with_selected']		= 'با انتخاب شده ها';
 
+$lang['bf_env_dev']				= 'گسترش';
+$lang['bf_env_test']			= 'آزمایشی';
+$lang['bf_env_prod']			= 'محصول نهایی';
 
+$lang['bf_show_profiler']		= 'نمایش اطلاعات اجرا در پنل مدیریت؟';
+$lang['bf_show_front_profiler']	= 'نمایش اطلاعات اجرا در سایت؟';
 
-$lang['from']= 'از';
-$lang['to']= 'تا';
-$lang['and']= 'و';
-$lang['type']= 'نوع';
-$lang['plan']= 'سطح';
-$lang['status']= 'وضعیت';
-$lang['nature']= 'ماهیت';
-$lang['count']= 'تعداد';
-$lang['search']= 'جستجو';
-$lang['save']= 'ثبت';
-$lang['cancel']= 'صرف نظر';
-$lang['update']= 'بروز رسانی';
-$lang['edit']= 'ویرایش';
-$lang['delete']= 'حذف';
-$lang['area']= 'متراژ';
-$lang['meters']= 'متری';
-$lang['toman']= 'تومان';
-$lang['price']= 'قیمت';
-$lang['pay']= 'پرداخت';
+$lang['bf_cache_not_writable']  = 'پوشه کش برنامه قابل نوشت نمی باشد.';
 
-$lang['conditions']= 'شرایط';
-$lang['city']= 'شهر';
+$lang['bf_password_strength']			= 'تنظیمات کلمه عبور';
+$lang['bf_password_length_help']		= 'حداقل طول برای کلمه عبور به طور مثال : 8';
+$lang['bf_password_force_numbers']		= 'آیا کلمه عبور حتما باید شامل عدد باشد؟';
+$lang['bf_password_force_symbols']		= 'آیا کلمه عبور حتما باید شامل کاراکتر های سمبل باشد؟';
+$lang['bf_password_force_mixed_case']	= 'آیا کلمه عبور حتما باید شامل حروف کوچک به همراه حروف بزرگ باشد؟';
 
-$lang['rent']= 'اجاره';
-$lang['mortgage']= 'رهن';
-$lang['sale']= 'فروش';
-$lang['exchange']= 'معاوضه';
+//--------------------------------------------------------------------
+// ! USER/PROFILE
+//--------------------------------------------------------------------
 
-$lang['apartment']= 'آپارتمان';
-$lang['villa']= 'ویلا';
-$lang['gardden']= 'باغ';
-$lang['tilt']= 'کلنگی';
-$lang['yard']= 'حیاط دار';
-$lang['earth']= 'زمین';
+$lang['bf_user']				= 'کاربر';
+$lang['bf_users']				= 'کاربران';
+$lang['bf_username']			= 'نام کاربری';
+$lang['bf_description']			= 'توضیحات';
+$lang['bf_email']				= 'پست الکترونیکی';
+$lang['bf_user_settings']		= 'مشخصات من';
 
-$lang['choose_your_province']= 'استان خود را انتخاب کنید.';
-$lang['select_your_city']= 'شهر خود را انتخاب کنید.';
-$lang['contact_information']= 'اطلاعات تماس';
-$lang['register_price']= 'هزینه ثبت نام';
-$lang['register_price_updated']= 'هزینه های ثبت نام با موفقیت بروزرسانی شد';
+//--------------------------------------------------------------------
+// !
+//--------------------------------------------------------------------
 
-$lang['accounting']= 'حسابداری';
-$lang['account']= 'حساب';
-$lang['transaction']= 'تراکنش';
-$lang['wallet']= 'کیف پول';
-$lang['increase_debit']= 'افزایش اعتبار';
-$lang['decrease_debit']= 'کاهش اعتبار';
-$lang['decrease_user_debit']= 'کاهش اعتبار بابت افزایش اعتبار ایدی ';
-$lang['creditor']= 'افزایش';
-$lang['creditor_percent']= 'افزایش با درصد';
-$lang['debtor']= 'کاهش';
-$lang['month_income']= 'درآمد این ماه';
-$lang['total_income']= 'جمع درآمد کل';
-$lang['credit']= 'اعتبار';
-$lang['creadit_complate']= 'تراکنش با موفقیت ثبت شد';
-$lang['no_credit']= 'موجودی حساب شما کافی نیست. لطفا پس از افزایش موجودی مجددا سعی کنید.';
-$lang['credit_not_found']= 'هیچ حسابی یافت نشد.';
-$lang['online_pay']= 'پرداخت آنلاین';
-$lang['amount']= 'مبلغ';
+$lang['bf_both']				= 'هر دو';
+$lang['bf_go_back']				= 'بازگشت';
+$lang['bf_new']					= 'جدید';
+$lang['bf_required_note']		= 'گزینه های اجباری به صورت <b>ضخیم تر</b> می باشند.';
+$lang['bf_form_label_required'] = '<span class="required">*</span>';
 
-$lang['pay_estate']= 'هزینه ثبت مشاوره املاک';
-$lang['pay_user']= 'هزینه ثبت کاربر';
-$lang['pay_agencya']= 'هزینه ثبت نمایندگی A';
-$lang['pay_agencyb']= 'هزینه ثبت نمایندگی B';
+//--------------------------------------------------------------------
+// MY_Model
+//--------------------------------------------------------------------
+$lang['bf_model_db_error']		= 'خطای پایگاه داده: %s';
+$lang['bf_model_fetch_error']	= 'اطلاعات کافی جهت واکشی فیلد موجود نیست.';
+$lang['bf_model_count_error']	= 'اطلاعات کافی جهت شمارش نتایج موجود نمی باشد.';
+$lang['bf_model_unique_error']	= 'اطلاعات کافی جهت بررسی یکتا بودن موجود نمی باشد.';
+$lang['bf_model_find_error']	= 'اطلاعات کافی جهت جستجو موجود نیست.';
 
-$lang['escompte']= 'کمیسیون';
-$lang['escompte_house']= 'کمیسیون ملک';
-$lang['escompte_updated']= 'کمیسیون با موفقیت بروزرسانی شد';
-$lang['escompte_pay']= 'هزینه ثبت ملک';
+//--------------------------------------------------------------------
+// Contexts
+//--------------------------------------------------------------------
+$lang['bf_no_contexts']			= 'آرایه بخش های مدیریت به صورت صحیح وارد نشده اند. لطفا فایل کانفیگ را جهت اصلاع بررسی نمایید.';
+$lang['bf_context_content']		= 'محتوی';
+$lang['bf_context_reports']		= 'گزارشات';
+$lang['bf_context_settings']	= 'تنظیمات';
+$lang['bf_context_developer']	= 'گسترش';
 
-$lang['domain_price']= 'هزینه دامنه';
-$lang['domain_price_updated']= 'هزینه دامنه با موفقیت بروزرسانی شد';
-$lang['domain_pay']= 'هزینه ثبت دامنه';
-$lang['list_domain']= 'دامنه ها';
+//--------------------------------------------------------------------
+// Activities
+//--------------------------------------------------------------------
+$lang['bf_act_settings_saved']	= 'تنظیمات برنامه ذخیره شدند.';
+$lang['bf_unauthorized_attempt']= 'تلاش نا موفق جهت دسترسی به صفحه ای که نیاز به مجوز "%s" دارد.';
 
-$lang['agency']= 'نمایندگی';
-$lang['agency_add']= 'ثبت نمایندگی';
-$lang['agency_edit']= 'ویرایش نمایندگی';
-$lang['agency_list']= 'لیست نمایندگی';
-$lang['agency_search']= 'جستجوی نمایندگی';
-$lang['agency_complate']= 'نمایندگی با موفقیت ثبت شد';
-$lang['agency_edited']= 'نمایندگی با موفقیت ویرایش شد';
-$lang['agency_not_found']= 'نمایندگی شما یافت نشد.';
+$lang['bf_keyboard_shortcuts']		= 'کلید های میانبر قابل دسترس:';
+$lang['bf_keyboard_shortcuts_none']	= 'کلید میانبری تعریف نشده است.';
+$lang['bf_keyboard_shortcuts_edit']	= 'ویرایش کلید های میانبر';
 
-$lang['escompte_credit']= 'کمیسیون اعتبار';
+//--------------------------------------------------------------------
+// Common
+//--------------------------------------------------------------------
+$lang['bf_question_mark']	      = '؟';
+$lang['bf_language_direction']	= 'rtl';
+$lang['log_intro']              = 'این ها پیام های ورود شما هستند:';
 
-$lang['house_list']= 'لیست ملک ها';
-$lang['house_not_found']= 'هیچ ملکی یافت نشد.';
+//--------------------------------------------------------------------
+// Login
+//--------------------------------------------------------------------
+$lang['bf_action_register']		= 'ثبت نام';
+$lang['bf_forgot_password']		= 'کلمه عبور خود را فراموش کرده اید؟';
+$lang['bf_remember_me']			= 'مرا به یاد داشته باش';
 
-$lang['edit_user']= 'ویرایش کاربر';
-$lang['user_edit_complate']= 'کاربر مورد نظر با موفقیت بروزرسانی شد.';
-$lang['user_not_found']= 'کاربری وجود ندارد.';
-$lang['user_list']= 'لیست کاربر ها';
-$lang['user_complate']= 'کاربر با موفقیت ثبت ';
+//--------------------------------------------------------------------
+// Password Help Fields to be used as a warning on register
+//--------------------------------------------------------------------
+$lang['bf_password_number_required_help']  = 'کلمه عبور حداقل باید شامل یک نقطه باشد.';
+$lang['bf_password_caps_required_help']    = 'کلمه عبور باید حداقل شامل یک حرف بزرگ باشد.';
+$lang['bf_password_symbols_required_help'] = 'کلمه عبور حداقل باید شامل یک کاراکتر سمبل باشد.';
 
-/* dashboard */
-$lang['mb_form_errors'] = 'لطفا خطا هاي زیر را تصحيح نماييد.';
-$lang['dashboard_title']= 'داشبورد';
-$lang['first_link']= 'اولین';
-$lang['last_link']= 'آخرین';
-$lang['next_link']= 'بعدی &gt;';
-$lang['prev_link']= '&lt; قبلی';
-$lang['list_users']= 'لیست کاربر';
-$lang['list_estate']= 'لیست مشاوره املاک';
-$lang['add_user']= 'ثبت کاربر';
-$lang['add_estate']= 'ثبت مشاوره املاک';
-$lang['add_house']= 'ثبت ملک';
-$lang['add_melk']= 'ثبت ملک';
-$lang['add_domain']= 'اتصال دامنه';
-$lang['edit_domain_complate']= 'دامنه با موفقیت بروزرسانی شد.';
-$lang['edit_domain']= 'ویرایش دامنه';
-$lang['edit_house']= 'ویرایش ملک';
-$lang['amlak_complate']= 'مشاوره املاک مورد نظر با موفقیت ثبت شد.';
-$lang['melk_complate']= 'ملک مورد نظر با موفقیت ثبت شد.';
-$lang['amlak_not_found']= 'این مشاوره املاک وجود ندارد.';
-$lang['domain_not_found']= 'این دامنه وجود ندارد.';
-$lang['melk_not_found']= 'این ملک وجود ندارد.';
-$lang['domain']= 'دامنه';
-$lang['add_new_domain']= 'اتصال دامنه جدید';
-$lang['domain_complate']= 'دامنه جدید ذخیره شد.';
-$lang['edit_profile']= 'ویرایش پروفایل';
-$lang['save_profile']= 'پروفایل شما بروزرسانی شد.';
-$lang['edit_subdomain']= 'تغییر زیر دامنه';
-$lang['save_subdomain']= 'زیر دامنه بروزرسانی شد.';
-$lang['error_subdomain']= 'شما قبلا زیر دامنه را ویرایش کرده اید.';
-$lang['tip_subdomain']= 'کاربر گرامی توجه فرمایید که شما فقط یک بار قادر به تغییر زیر دامنه هستید.(برای همیشه)';
+$lang['bf_password_min_length_help']       = 'طول کلمه عبور حداقل باید %s کاراکتر باشد.';
 
-$lang['setting']			= "تنظیمات";
-$lang['edit_settings']		= "ویرایش تنظیمات";
-$lang['settings_complate']	= "تنظیمات با موفقیت بروزرسانی شد.";
-$lang['site_name']			= "نام سایت";
-$lang['site_call']			= "شماره تماس";
-$lang['work_time']			= "ساعت کار";
-$lang['site_description']	= "توضیحات سایت";
-$lang['contact_us']			= "تماس با ما";
-$lang['about_us']			= "درباره ما";
+//--------------------------------------------------------------------
+// User Meta examples
+//--------------------------------------------------------------------
 
-$lang['twitter']		= "تویتر";
-$lang['facebook']		= "فیسبوک";
-$lang['pinterest']		= "پینترست";
-$lang['instagram']		= "اینستاگرام";
-$lang['googleplus']		= "گوگل پلاس";
+$lang['user_meta_street_name']	= 'نام خیابان';
+$lang['user_meta_type']			= 'نوع';
+$lang['user_meta_country']		= 'کشور';
+$lang['user_meta_state']		= 'استان';
+
+//--------------------------------------------------------------------
+// Activation
+//--------------------------------------------------------------------
+$lang['bf_activate_method']			= 'روش فعال سازی';
+$lang['bf_activate_none']			= 'هیچ';
+$lang['bf_activate_email']			= 'ایمیل';
+$lang['bf_activate_admin']			= 'ادمین';
+$lang['bf_activate']				= 'فعال سازی';
+$lang['bf_activate_resend']			= 'ارسال دوباره فعال سازی';
+
+$lang['bf_reg_complete_error']		= 'در ثبت نام شما مشکلی بوجود آمده است. لطفا مجددا سعی کنید و یا با مدیریت سایت تماس بگیرید.';
+$lang['bf_reg_activate_email'] 		= 'ایمیلی حاوی لینک فعال سازی به [EMAIL] ارسال شده است.';
+$lang['bf_reg_activate_admin'] 		= 'شما باید منتظر تایید ثبت نامتان توسط مدیریت باشید.';
+$lang['bf_reg_activate_none'] 		= 'لطفا جهت استفاده از سایت وارد شوید.';
+$lang['bf_user_not_active'] 		= 'حساب کاربری غیر فعال است.';
+$lang['bf_login_activate_title']	= 'نیاز دارید که حساب کاربریتان را فعال نمایید؟';
+$lang['bf_login_activate_email'] 	= '<b>کد فعال سازی حساب کاربری خودتان را دارید؟</b> کد را در [ACCOUNT_ACTIVATE_URL] وارد نمایید.<br /><br />    <b>کد فعال سازی ندارید؟</b> میتوانید این کد را در صفحه ی [ACTIVATE_RESEND_URL] درخواست نمایید.';
+
+//--------------------------------------------------------------------
+// Migrations lib
+//--------------------------------------------------------------------
+$lang['no_migrations_found']			= 'هيچ فايل ارتقايي يافت نشد';
+$lang['multiple_migrations_version']	= 'نسخه ي تکراري براي فايل ارتقا: %d';
+$lang['multiple_migrations_name']		= 'نام تکراري براي فايل ارتقا: %s';
+$lang['migration_class_doesnt_exist']	= 'کلاس فايل ارتقا يافت نشد: %s';
+$lang['wrong_migration_interface']		= 'اينترفيس نا معتبر براي فايل ارتقا: %s';
+$lang['invalid_migration_filename']		= 'فايل ارتفاي نا معتبر: %s - %s';
